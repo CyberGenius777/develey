@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap');
+
+:root {
+	--logo-color-main: #056a39;
+	--logo-color-second: #91bb0e;
+
+	--main-font: 'Oswald', sans-serif;
+}

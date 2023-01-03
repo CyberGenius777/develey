@@ -1,8 +1,21 @@
-import React from 'react'
-import './App.css'
+import './App.css';
+import { HeaderMenu } from './components/HeaderMenu';
+import { MainContent } from './components/MainContent';
+import { Sortiment } from './components/Sortiment';
+import { Section } from './styles';
 
 function App() {
-  return <div className='text-lg bg-red-700'>h2</div>
+	return (
+		<div>
+			<HeaderMenu />
+			<Section>
+				<MainContent />
+			</Section>
+			<Section>
+				<Sortiment />
+			</Section>
+		</div>
+	);
 }
 
-export default App
+export default App;

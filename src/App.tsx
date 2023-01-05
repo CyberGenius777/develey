@@ -1,4 +1,5 @@
 import './App.css';
+import { Brands } from './components/Brands';
 import { HeaderMenu } from './components/HeaderMenu';
 import { Konzepte } from './components/Konzepte';
 import { MainContent } from './components/MainContent';
@@ -21,6 +22,9 @@ function App() {
 			</Section>
 			<Section>
 				<Konzepte />
+			</Section>
+			<Section>
+				<Brands />
 			</Section>
 		</div>
 	);

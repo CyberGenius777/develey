@@ -1,5 +1,6 @@
 import './App.css';
 import { HeaderMenu } from './components/HeaderMenu';
+import { Konzepte } from './components/Konzepte';
 import { MainContent } from './components/MainContent';
 import { More } from './components/More';
 import { Sortiment } from './components/Sortiment';
@@ -17,6 +18,9 @@ function App() {
 			</Section>
 			<Section>
 				<More />
+			</Section>
+			<Section>
+				<Konzepte />
 			</Section>
 		</div>
 	);

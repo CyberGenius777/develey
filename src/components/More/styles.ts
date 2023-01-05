@@ -1,21 +1,16 @@
 import styled from 'styled-components';
-import middleBg from '../../media/middle-bg.png';
+
 import checkImg from '../../media/check.png';
 
-export const Wrapper = styled.div`
-	margin-top: calc(95px - 36px);
-	background-image: url(${middleBg});
-	background-size: cover;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 680px;
-`;
+export const Wrapper = styled.div``;
 export const Content = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	height: 90%;
+	display: grid;
+	grid-template-columns: 50% 1fr;
+`;
+
+export const Logo = styled.img`
+	display: block;
+	max-width: 100%;
 `;
 
 export const Title = styled.span`
@@ -28,15 +23,14 @@ export const Title = styled.span`
 export const Info = styled.div``;
 
 export const ListWrapper = styled.ul`
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	flex-direction: column;
+	position: relative;
+	right: 55px;
 `;
 
 export const Item = styled.li`
 	list-style: none;
 	display: flex;
+	font-weight: var(--main-font-light);
 	align-items: flex-start;
 	&:before {
 		content: url(${checkImg});
@@ -45,13 +39,13 @@ export const Item = styled.li`
 `;
 
 export const FirstProductTitle = styled.span`
-	font-size: 4em;
+	font-size: 5em;
 	color: var(--logo-color-main);
 	font-weight: var(--main-font-bold);
 `;
 
 export const SecondProductTitle = styled.span`
-	font-size: 4em;
+	font-size: 5em;
 	position: relative;
 	bottom: 20px;
 	color: var(--logo-color-second);

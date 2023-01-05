@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
 	position: fixed;
 	width: 100%;
 	top: 0;
+	z-index: 999;
 `;
 export const Content = styled.div`
 	display: flex;
